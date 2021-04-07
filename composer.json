@@ -1,0 +1,48 @@
+{
+    "name": "weblogin/laravel-lookup",
+    "description": "Laravel lookup objects and Eloquent casts for static data.",
+    "keywords": [
+        "laravel",
+        "eloquent",
+        "lookup",
+        "cast",
+        "laravel-lookup",
+        "weblogin"
+    ],
+    "homepage": "https://github.com/weblogin/laravel-lookup",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WebLogin",
+            "email": "contact@weblogin.fr"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/contracts": "^7.0|^8.0",
+        "illuminate/database": "^7.0|^8.0",
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebLogin\\LaravelLookup\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebLogin\\LaravelLookup\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WebLogin\\LaravelLookup\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

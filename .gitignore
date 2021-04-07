@@ -1,0 +1,7 @@
+### Laravel ###
+/vendor
+/.idea
+/.vscode
+composer.lock
+.DS_Store
+.phpunit.result.cache
