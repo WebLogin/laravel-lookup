@@ -1,12 +1,16 @@
 # Laravel Lookup
 
-Laravel Lookup helps you to have a place to store static data of your Laravel application with little sugar added to it and Eloquent casts to easily use them in your Laravel models. When you don't want to create database tables for every little things. **Think of it as static model**.
+Laravel Lookup helps to have a place to store static data of your Laravel application with little sugar added to it and Eloquent casts to easily use them in your Laravel models. Useful when you don't want to create database tables for every little things, **think of it as static model**.
 
-Let's say you have a `Car` model with an attribute `engine` that can have the value `gasoline`, `electric` or `hybrid`. Creating a model and a database table can be overkill for this simple key/value data.
+<p align="center">
+    <img src="docs/banner.jpg" alt="Collision logo" width="1000">
+</p>
+
+Imagine you have a `Car` model with an attribute `engine` that can have the value `gasoline`, `electric` or `hybrid`. Creating a model and a database table can be overkill for this simple key/value data.
 
 In the past we used language files to store this but would end up having to deal with a simple array when calling `Lang::get('car.engines')`. It felt weird and not realy DRY when needing to add some reusable logic for these data. The main goal was having one stable source to get this data and be able to have some flexibility in it.
 
-With a lookup object (other call it Value object or Fixture object) you'll be able to have a collection containing real objects. It lets you use the power of collection, populate a dropdown select, add form validation, populate factories, etc and with Laravel custom cast we can access them like a real model relation for a nice code readability.
+With a lookup object (other call it Value object) you'll be able to have a collection containing real objects. It lets you use the power of Laravel collection to easily populate a dropdown select, add form validation, populate factories, etc and with Laravel custom cast we can access them like a real model relation for a nice code readability.
 
 - [Installation](#installation)
 - [Usage of Lookup](#usage-of-lookup)
