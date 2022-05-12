@@ -2,9 +2,11 @@
 namespace WebLogin\LaravelLookup;
 
 use Exception;
+use JsonSerializable;
+use Illuminate\Contracts\Support\Arrayable;
 
 
-abstract class Lookup
+abstract class Lookup implements Arrayable, JsonSerializable
 {
 
     /**
@@ -75,6 +77,18 @@ abstract class Lookup
         }
 
         return $collection;
+    }
+
+
+    public function toArray()
+    {
+        return $this->getPrimaryKey();
+    }
+
+
+    public function jsonSerialize()
+    {
+        return $this->toArray();
     }
 
 
