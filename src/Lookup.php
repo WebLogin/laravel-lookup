@@ -86,7 +86,7 @@ abstract class Lookup implements Arrayable, JsonSerializable
     }
 
 
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         return $this->toArray();
     }
