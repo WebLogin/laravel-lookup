@@ -80,9 +80,12 @@ abstract class Lookup implements Arrayable, JsonSerializable
     }
 
 
+    /**
+     * @return array
+     */
     public function toArray()
     {
-        return $this->getPrimaryKey();
+        return get_object_vars($this);
     }
 
 
