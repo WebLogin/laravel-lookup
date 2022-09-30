@@ -59,4 +59,13 @@ class LookupCast implements CastsAttributes
         return (string) $value;
     }
 
+
+    /**
+     * @return string|int|null
+     */
+    public function serialize($model, string $key, $value, array $attributes)
+    {
+        return !is_null($value) ? $value->getPrimaryKey() : null;
+    }
+
 }
