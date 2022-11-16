@@ -304,7 +304,7 @@ Set database column that will store the value according to your `Lookup` usage, 
 
 ### Primary key
 
-By default a `Lookup` needs to have `key` attribute defined for each item and it needs to be unique (it can by a `string` or `int`). It's used to retrieve the object from the collection. But you can override this primary key by adding a `$primaryKey` attribute to the class :
+By default a `Lookup` needs to have `key` attribute defined for each item and it needs to be unique (it can by a `string` or `int`). It's used to retrieve the object from the collection. But you can override this primary key by adding a `$primaryKeyName` attribute to the class :
 
 ```php
 class CountryLookup extends Lookup
@@ -312,7 +312,7 @@ class CountryLookup extends Lookup
 
     public $code;
     public $name;
-    protected static $primaryKey = 'code';
+    protected static $primaryKeyName = 'code';
 
 
     protected static function getItems()
