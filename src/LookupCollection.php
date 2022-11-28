@@ -22,7 +22,7 @@ class LookupCollection extends BaseCollection
 
             return $this->filter(function ($lookup) use ($key) {
                 return in_array($lookup->getPrimaryKey(), $key, true);
-            });
+            })->values();
         }
 
         return $this->first(function ($lookup) use ($key) {
