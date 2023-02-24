@@ -1,3 +1,5 @@
+> ⚠️ This Package was originally created on Laravel 7 because it didn't offer this kind of feature. Since Laravel 9 we can use [Enum Eloquent attribute casting](https://laravel.com/docs/9.x/releases#enum-casting), in most cases they can do the same as Laravel-Lookup so we recommend giving them a try instead of our package.
+
 # Laravel Lookup
 
 Laravel Lookup helps to have a place to store static data of your Laravel application with little sugar added to it and Eloquent casts to easily use them in your Laravel models. Useful when you don't want to create database tables for every little things, **think of it as static model**.
